@@ -19,6 +19,7 @@ bin/
 
 # NetBeans
 nb-configuration.xml
+nbactions.xml
 
 # Visual Studio Code
 .vscode
@@ -41,4 +42,7 @@ nb-configuration.xml
 #JReleaser
 out/
 
-measurements*.txt
+# 1BRC
+/measurements*.txt
+/*.out
+out_expected.txt

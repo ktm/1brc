@@ -15,6 +15,7 @@
 #  limitations under the License.
 #
 
-
 JAVA_OPTS=""
-time java $JAVA_OPTS --class-path target/average-1.0.0-SNAPSHOT.jar dev.morling.onebrc.CalculateAverage
+CHUNK_SIZE=$((8 * 1024 * 1024))
+java $JAVA_OPTS --class-path target/average-1.0.0-SNAPSHOT.jar \
+dev.morling.onebrc.CalculateAverage_imrafaelmerino $CHUNK_SIZE
